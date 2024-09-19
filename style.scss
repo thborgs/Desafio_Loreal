@@ -1,0 +1,106 @@
+@mixin flexbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #EFEEF3;
+    
+}
+
+
+header{
+    @include flexbox();
+    //border: solid red;
+    font-family: "Kodchasan", sans-serif;
+    text-transform: uppercase;
+
+    
+    
+    ul{
+
+    //border: solid blue;
+
+        display: flex;
+        list-style: none;
+        
+    a{
+        
+        padding: 2vh;
+        color: white;
+        text-decoration: none;
+        display: block;
+          
+        }
+        
+        a:visited { 
+            text-decoration: none; 
+            color: rgb(0, 0, 0); 
+            
+           }
+    
+        a:hover {
+            color: #5c5959;
+           }
+        
+    }
+
+    
+}
+
+.Produto-novo{
+    //border: solid rgb(0, 81, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10vh;
+
+    h1{
+        font-family: "Kodchasan", sans-serif;
+        margin-bottom: 10px;
+        text-align: center;
+
+    }
+
+    p{
+        font-family: "Kodchasan", sans-serif;
+        text-align: center;
+        
+
+    }
+}
+
+.Produtos-favoritos{
+    //border: solid red;
+    display: flex;
+    justify-content: space-between; // Distribui o conteúdo igualmente
+    align-items: center; // Alinha verticalmente
+    padding: 40px;
+
+    .text-content{
+        flex: 1;
+
+    }
+
+    h2{
+        
+         font-family: "Kodchasan", sans-serif;
+         font-weight: 10;
+        
+    }
+
+    .img-content{
+        flex: 2; // Mais espaço para os produtos
+        display: flex;
+        justify-content: space-around; // Espaçamento igual entre os produtos
+
+    //border: solid pink;
+}
+
+
+}
+

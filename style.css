@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #EFEEF3;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Kodchasan", sans-serif;
+  text-transform: uppercase;
+}
+header ul {
+  display: flex;
+  list-style: none;
+}
+header ul a {
+  padding: 2vh;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+header ul a:visited {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+header ul a:hover {
+  color: #5c5959;
+}
+
+.Produto-novo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10vh;
+}
+.Produto-novo h1 {
+  font-family: "Kodchasan", sans-serif;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.Produto-novo p {
+  font-family: "Kodchasan", sans-serif;
+  text-align: center;
+}
+
+.Produtos-favoritos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+.Produtos-favoritos .text-content {
+  flex: 1;
+}
+.Produtos-favoritos h2 {
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 10;
+}
+.Produtos-favoritos .img-content {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+}/*# sourceMappingURL=style.css.map */
